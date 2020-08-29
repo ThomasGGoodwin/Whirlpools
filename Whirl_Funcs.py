@@ -71,9 +71,10 @@ def colorless(n,rho,phi,base,iters,startx=600,starty=-300,lamp=False):
 def colored(n,rho,phi,base,iters,colors,backcol="#cccccc",startx=540,starty=315,lamp=False):
     reset()
     c=0
-    if len(colors)!=n:
-        mul = int(n/len(colors))
-        colors = colors*mul
+    pos=0
+    while len(colors)!=n:
+        colors = colors + [colors[pos]]
+        pos+=1
     colors = colors + [colors[0]]
     # creating alpha, beta, ga
     alp = ((n - 2) * 180 / n) / 2
@@ -198,7 +199,10 @@ def preview(n,rho,phi,iters,colors,startx=-100,starty=-200,lamp=False,rad=350):
     len3 = sqrt(baselen ** 2 + len2 ** 2 - 2 * baselen * len2 * cos(radians(x)))
     y = 180 - degrees(asin(baselen * sin(radians(x)) / len3))
     z = 180 - y - x
-
+    pos = 0
+    while len(colors) != n:
+        colors = colors + [colors[pos]]
+        pos += 1
     screen = Screen()
     screen.setup(width=1.0, height=1.0)
     hideturtle()

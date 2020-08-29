@@ -1,9 +1,9 @@
-6
-12
+4
+10
 20
-120
-12
-#aabbcc,#22ab4f,#3d2a5c
+140
+4
+#aabbcc,#22ab4f,#3d2a5c,#45c2f0
 #cccccc
 
 
