@@ -37,4 +37,4 @@ This was made using Spiral by Tomoko Fuse (pgs 153-155) as a reference
 ### You probably won't have to touch these
 8. startx: Sets the starting x coordinate for the Turtle module.
 9. starty: Sets the starting y coordinate for the Turtle module.
-10.rad: Only applies when previewing a spiral. Changes the size of the preview. Think of the preview as being encompassed by a circle and rad is the length of the radius.
+10. rad: Only applies when previewing a spiral. Changes the size of the preview. Think of the preview as being encompassed by a circle and rad is the length of the radius.
